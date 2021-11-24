@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <style type="text/css">
+
+        body{
+            background: #b6b3af;
+        }
+
+        h1{
+            text-align: center;
+            color: #ed6313;
+            background: #f0e8e6;
+            padding: 5px;
+            border:#f0e8e6;
+            border-radius: 10px;
+        }
+
+        .calculos{
+	 	background: #c7502c;
+	 	color: #ffffff;
+	 	margin: 5px;
+	 	padding: 10px;
+	 	font-size: 20px;
+        border:#f0e8e6;
+        border-radius: 10px;
+	    }
+
+        .menu a{
+        color: rgb(87, 4, 90);
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+		<h1>Suma de vectores</h1>
+	</header>
+
+    <div class="menu">
+	
+        <a href="edad.html">¿Quieres saber cual es la edad de tu mascota?</a>
+
+   <div id="respuesta"></div>
+
+    <article>
+		
+		<div class="calculos" id="salida">
+
+<script type="text/javascript">
+	var vector1=[];
+	var vector2=[];
+	var vsuma=[];
+    var suma=0;
+	var limite=parseInt(prompt('numero de valores:'));
+	for (var i=0;i<limite;i++){
+		var valor1=parseInt(prompt("valor1:"))
+		var valor2=parseInt(prompt("valor2:"))
+		vector1[i]=valor1;
+		vector2[i]=valor2;
+		vsuma[i]=vector1[i]+vector2[i];
+		
+	}
+	document.write("el vector 1 :"+vector1)
+	document.write("<br>el vector 2 :"+vector2)
+	document.write("<br>el vector suma es :"+vsuma)
+</script>
+</div>
+</article>
+</body>
+</html>

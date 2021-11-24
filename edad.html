@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+    <style type="text/css">
+
+        body{
+        background-color: #b6b3af;
+        }
+
+        .calculos{
+            background: #c7502c;
+            color: #f0e8e6;
+            margin: 20px;
+            padding: 30px;
+            font-size: 20px;
+            align-items: center;
+            border:#f0e8e6;
+            border-radius: 10px;
+        }
+
+        .res{
+		padding: 15px;
+		margin: 5px;
+		text-align: center;
+		color: #1f1918;
+		font-size: 24px;
+	}
+
+        h1{
+            text-align: center;
+            color: #ed6313;
+            background: #f0e8e6;
+            padding: 5px;
+            border:#f0e8e6;
+            border-radius: 10px;
+        }
+        .menu a{
+        color: rgb(87, 4, 90);
+        display: block;
+        text-align: right;
+        padding: 1px;
+        margin: 0;
+        font-size: 30px;
+        }
+
+        img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px 5px;
+        width: 25%;
+        height: 25%;
+        
+        }
+        
+        p{
+            background: #c7502c;
+        color: rgb(239, 248, 255);
+        margin: 5px;
+	 	padding: 10px;
+	 	font-size: 20px;
+        border:#f0e8e6;
+        border-radius: 10px;
+        }
+   </style>
+
+<body>
+    
+    <header>
+		<h1>Calcula la edad de tu perro</h1>
+	</header>
+
+    <div class="menu">
+	
+        <a href="index.html">Vectores</a>
+
+   <div id="respuesta"></div>
+
+   <article>
+   <a href="dogui.jpeg" target="_blank"><img src="dogui.jpeg" ></a>
+   <p>El es Dogui y tiene 5 años, por el mito de su edad tendria 35 años humanos, pero segun un estudio la manera de calcular su edad es otra, con este nuevo metodo tendria 56 años humanos</p>
+
+	<h1>Veamos cual es la edad de tu mascota!</h1>
+
+    <section class="res">
+    <input type="text" id="numero"/>
+	<input type="button" value="calcular" onclick="edad()"/>
+	<article>
+		
+	<div class="calculos" id="salida"></div>
+
+<script language="javascript">
+		function edad(){
+
+	var edad_perro=parseInt(document.getElementById("numero").value);
+	var edad_humana=16*[Math.log(edad_perro)]+31
+
+document.getElementById("salida").innerHTML ="La edad en años humanos es: <br>"+edad_humana+" <br> El mito de  su edad en años humanos es: <br>"+edad_perro*7;
+}
+      
+</script>
+</article>
+</body>
